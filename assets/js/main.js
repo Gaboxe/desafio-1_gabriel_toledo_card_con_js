@@ -13,14 +13,15 @@ var total = document.querySelector(".total"); //Salida como constante
 var output__color = document.querySelector(".color"); //Salida como constante
 
 function totalYColor() {
-    let a = canasta__cantidad.innerHTML = +input__cantidad.value;
+    let a = +input__cantidad.value;
 
-    if (a != 0 || a != "") {
+    if (a != 0 && input__color.value != "" || a != "" && input__color.value != "") {
         total.innerHTML = new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(a * precio);
         output__color.style.backgroundColor = input__color.value;
+        canasta__cantidad.innerHTML = a;
         input__cantidad.value = "";
     } else {
-        alert("ingrese una cantidad")
+        alert("ingrese una cantidad y un color valido")
         return
     }
 
