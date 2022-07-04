@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate a coffee cup</title>
+
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="card">
+
+            <div class="card-img">
+                <img class="img" src="./assets/img/coffee_cup_icon.png" alt="img">
+            </div>
+            <div class="cuerpo">
+
+                <h3>Coffee Cup</h3>
+                <p class="c-precio">Monto base <span id="precio"> -</span></p>
+            </div>
+            <div class="datos">
+                <input class="formulario__input" type="number" name="" id="input__cantidad" min="1" max="100" step="1"
+                    placeholder="Cantidad">
+                <input class="formulario__input" type="text" name="" id="color" placeholder="Color">
+                <button class="btn2" onclick="totalYColor()">Enviar</button>
+            </div>
+        </div>
+        <section class="pantalla bg-img">
+            <p class="p-titulo">Cantidad <span>Valor/U</span></p>
+            <p class="p-txt"><spam class="canasta__cantidad">-</spam> ----- <span class="precio_2"></span> </p>
+            <p class="p-color">Color: <span class="color"></span></p>
+            <p class="p-total"> Total: <span class="total">-</span></p>
+        </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
